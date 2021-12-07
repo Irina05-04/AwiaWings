@@ -130,7 +130,7 @@
   .white_rectangle {
     width: 288px;
     min-height: 322px;
-    margin: 60px 0 0 16px;
+    margin: 60px auto;
   }
   .form > div {
     margin-bottom: 24px;
@@ -147,7 +147,7 @@
   }
   .registration button {
     position: absolute;
-    bottom: 22%;
+    top: 70%;
     left: 12%;
     border: 2px solid #132734;
     color: #132734;
