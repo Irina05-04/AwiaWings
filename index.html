@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script src="js/load.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>Awia Wings</title>
+  </head>
+  <body>
+    <div id="app" class="video">
+      <div id="header">
+        <div class="flex_header">
+          <div class="logo">
+            <a class="transition" href="index.html"
+              ><img src="img/logo.png"
+            /></a>
+            <div>Awia Wings</div>
+          </div>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <div class="menu-block">
+            <div class="social">
+              <a href="#"><img src="img/telegram.png" /></a>
+              <a href="#"><img src="img/facebook.png" /></a>
+              <a href="#"><img src="img/instagram.png" /></a>
+              <a href="autorization.html"><img src="img/user.png" /></a>
+              <div>русский</div>
+              <img src="img/arrow.png" />
+            </div>
+            <div class="header_menu">
+            <div class="menu">
+              <a href="autorization.html"><img class="mobile" src="img/user_white.png"></a>
+              <a class="transition" href="directions.html">направления</a>
+              <a class="transition" href="about.html">о компании</a>
+              <a class="transition" href="contact.html">контакты</a>
+              <a class="transition" href="#">справка</a>
+              <img src="img/loupe.png" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="whiteRectangle">
+      <div class="book">
+        <input
+          class="departureInput"
+          type="text"
+          name="departure"
+          placeholder="откуда"
+        />
+        <div class="swap"><img src="img/swap.png" /></div>
+        <input
+          class="arrivalInput"
+          type="text"
+          name="arrival"
+          placeholder="куда"
+        />
+        <div class="for-mobile-flex">
+        <input
+          type="text"
+          name="departureCalendar"
+          placeholder="вылет"
+          onfocus="(this.type = 'date')"
+          onfocusout="(this.type = 'text')"
+          
+        />
+        <input type="text" name="arrivalCalendar" placeholder="прибытие" onfocus="(this.type = 'date')" onfocusout="(this.type = 'text')"
+        />
+      </div>
+        <select class="select-css">
+          <option>пассажиры</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+
+        <a href="flights.html">найти</a>
+      </div>
+    </div>
+    <div>
+      <div class="screen_2Index animate__bounceInUp">
+        <div class="margin80 countainer">
+          <div class="invite wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
+            <div class="heading margin60">
+              Планируйте своё путешествие вместе с нами
+            </div>
+            <div class="margin32">
+              Выбирайте направление на ваше усмотрение, или можете связаться с
+              нами, мы подберём идеальный вариант для вас. Бронируйте билеты
+              прямо на сайте или в нашем приложении.
+            </div>
+            <div>
+              Мы вас уверяем: полёт оставит у вас только приятные воспоминания.
+            </div>
+          </div>
+          <div class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.1s""><img src="img/map.png" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="heading countainer center">Лучшие предложения</div>
+    <div class="choice">
+      <button class="economy" onclick="economy_slider()">Эконом</button>
+      <div><img src="img/dot.png" /></div>
+      <button class="bisness" onclick="bisness_slider()">Бизнес</button>
+    </div>
+    <div class="wrapper">
+      <!-- Контент-->
+      <!--Slider-->
+      <div class="image-slider swiper-container fade1">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image" onMouseOver="hoverCard(1,1)" onMouseOut="hoverCard(1,0)" id="card1">
+              <img src="img/maldive.png" alt="" />
+              <div class="cardName">Мальдивы</div>
+              <div class="continent">Южная Азия</div>
+              <select class="selectForDate">
+                <option>11 янв 2022 - 18 янв 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+              </select>
+              <div class="priceTrevel">70 486 RUB</div>
+              <div class="line"></div>
+              <div class="hover_btn" id="btn1">забронировать</div>
+            </div>
+            
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/singapur.png" alt="" />
+              <div class="cardName">Сингапур</div>
+              <div class="continent">Азия</div>
+              <select class="selectForDate">
+                <option>06 мар 2022 - 20 мар 2022</option>
+                <option>14 мар 2022 - 24 мар 2022</option>
+                <option>01 апр 2022 - 15 апр 2022</option>
+                <option>10 апр 2022 - 17 апр 2022</option>
+                <option>04 мая 2022 - 11 мая 2022</option>
+              </select>
+              <div class="priceTrevel">56 661 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/bali.png" alt="" />
+              <div class="cardName">Бали</div>
+              <div class="continent">Остров</div>
+              <select class="selectForDate">
+                <option>01 янв 2022 - 16 янв 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+              </select>
+              <div class="priceTrevel">81 263 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/varshava.png" alt="" />
+              <div class="cardName">Варшава</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>16 янв 2022 - 20 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 11 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+              </select>
+              <div class="priceTrevel">30 621 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/venezia.png" alt="" />
+              <div class="cardName">Венеция</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>06 мар 2022 - 20 мар 2022</option>
+                <option>14 мар 2022 - 24 мар 2022</option>
+                <option>01 апр 2022 - 15 апр 2022</option>
+                <option>10 апр 2022 - 17 апр 2022</option>
+                <option>04 мая 2022 - 11 мая 2022</option>
+              </select>
+              <div class="priceTrevel">45 324 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/dubai.png" alt="" />
+              <div class="cardName">Дубай</div>
+              <div class="continent">Азия</div>
+              <select class="selectForDate">
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+              </select>
+              <div class="priceTrevel">115 840 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/pecin.png" alt="" />
+              <div class="cardName">Пекин</div>
+              <div class="continent">Азия</div>
+              <select class="selectForDate">
+                <option>01 янв 2022 - 16 янв 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+              </select>
+              <div class="priceTrevel">64 476 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img src="img/oslo.png" alt="" />
+              <div class="cardName">Осло</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>16 янв 2022 - 20 янв 2022</option>
+                <option>21 янв 2022 - 25 янв 2022</option>
+                <option>03 фев 2022 - 11 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 20 мар 2022</option>
+              </select>
+              <div class="priceTrevel">33 712 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notFormobile"><img class="swiper-button-next" src="img/next.png" /></div>
+        <div class="notFormobile"><img class="swiper-button-prev" src="img/previos.png" /></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="wrapper-bisness">
+      <!--bisness-->
+      <div class="image-slider-bisness swiper-container-bisness fade1">
+        <div class="image-slider__wrapper-bisness swiper-wrapper">
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/ohrid.png" alt="" />
+              <div class="cardName">Охрид</div>
+              <div class="continent">Юго-восток Европы</div>
+              <select class="selectForDate">
+                <option>16 янв 2022 - 20 янв 2022</option>
+                <option>21 янв 2022 - 25 янв 2022</option>
+                <option>03 фев 2022 - 11 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 20 мар 2022</option>
+              </select>
+              <div class="priceTrevel">95 120 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/olbia.png" alt="" />
+              <div class="cardName">Ольбия</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+                <option>17 мая 2022 - 30 мая 2022</option>
+              </select>
+              <div class="priceTrevel">86 321 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/dubai.png" alt="" />
+              <div class="cardName">Дубай</div>
+              <div class="continent">Азия</div>
+              <select class="selectForDate">
+                <option>06 мар 2022 - 20 мар 2022</option>
+                <option>14 мар 2022 - 24 мар 2022</option>
+                <option>01 апр 2022 - 15 апр 2022</option>
+                <option>10 апр 2022 - 17 апр 2022</option>
+                <option>04 мая 2022 - 11 мая 2022</option>
+              </select>
+              <div class="priceTrevel">125 456 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/Miami.png" alt="" />
+              <div class="cardName">Маями</div>
+              <div class="continent">Северная Америка</div>
+              <select class="selectForDate">
+                <option>01 янв 2022 - 16 янв 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+              </select>
+              <div class="priceTrevel">112 965 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/kolombo.png" alt="" />
+              <div class="cardName">Коломбо</div>
+              <div class="continent">Южная Азия</div>
+              <select class="selectForDate">
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+              </select>
+              <div class="priceTrevel">89 503 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/deli.png" alt="" />
+              <div class="cardName">Дели</div>
+              <div class="continent">Южная Азия</div>
+              <select class="selectForDate">
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+              </select>
+              <div class="priceTrevel">86 530 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/haniy.png" alt="" />
+              <div class="cardName">Ханью</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>16 мар 2022 - 30 мар 2022</option>
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+              </select>
+              <div class="priceTrevel">79 123 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="image-slider__slide-bisness swiper-slide">
+            <div class="image-slider__image-bisness">
+              <img src="img/heraclion.png" alt="" />
+              <div class="cardName">Ираклион</div>
+              <div class="continent">Европа</div>
+              <select class="selectForDate">
+                <option>16 янв 2022 - 30 янв 2022</option>
+                <option>21 янв 2022 - 28 янв 2022</option>
+                <option>03 фев 2022 - 17 фев 2022</option>
+                <option>11 мар 2022 - 18 мар 2022</option>
+                <option>16 мар 2022 - 30 мар 2022</option>
+              </select>
+              <div class="priceTrevel">118 486 RUB</div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notFormobile"><img class="swiper-button-next-bisness" src="img/next.png" /></div>
+        <div class="notFormobile">
+          <img class="swiper-button-prev-bisness" src="img/previos.png" />
+        </div>
+
+        <div class="swiper-pagination-bisness"></div>
+      </div>
+    </div>
+    <div class="screen4 countainer">
+      <div class="margin60 heading center">Обратите внимание</div>
+      <div class="contact margin60">
+        <div class="white-rectangle-covid">
+          <div class="covid-information">
+            <div><img src="img/covidImg.png" /></div>
+            <div class="description-covid">
+              <div>Путешествуй без Covid</div>
+              <div>
+                AviaWings обеспечивает комфорт и безопасность для всех своих
+                клиентов.
+              </div>
+              <div>
+                Поэтому просим вас соблюдать наши новые требования и меры
+                безопасности.
+              </div>
+            </div>
+          </div>
+          <div class="min-arrow">
+            <a href="trevelCovid.html"><img src="img/arrowMin.svg" /></a>
+          </div>
+          <div class="line-covid"></div>
+        </div>
+        <div class="add-information">
+          <div class="min-block-information">
+            <img src="img/requirement.png" />
+            <div class="centre-name">Требования к полётам</div>
+          </div>
+          <div class="min-block-information">
+            <img src="img/rool.png" />
+            <div class="centre-name">Правила перевоза багажа</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen5">
+      <div class="countainer">
+        <div
+          class="heading why-we center wow bounceInUp"
+          data-wow-duration="2s"
+        >
+          Почему выбирают нас
+        </div>
+        <div class="contact why-we">
+          <div class="why-we-item">
+            <img
+              class="wow bounceInLeft"
+              data-wow-duration="2s"
+              src="img/we1.png"
+            />
+            <div class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+              <div class="why-we-number">115</div>
+              <div>опытных профессионалов</div>
+            </div>
+          </div>
+          <div class="why-we-item">
+            <img
+              class="wow bounceInLeft"
+              data-wow-duration="2s"
+              src="img/we2.png"
+            />
+            <div class="wow bounceInUp" data-wow-duration="2s"  data-wow-delay="0.4s">
+              <div class="why-we-number">24</div>
+              <div>различных направлений</div>
+            </div>
+          </div>
+          <div class="why-we-item">
+            <img
+              class="wow bounceInRight"
+              data-wow-duration="2s"
+              src="img/we3.png"
+            />
+            <div class="wow bounceInUp" data-wow-duration="2s"  data-wow-delay="0.4s">
+              <div class="why-we-number">89</div>
+              <div>современных авиалайнеров</div>
+            </div>
+          </div>
+          <div class="why-we-item">
+            <img
+              class="wow bounceInRight"
+              data-wow-duration="2s"
+              src="img/we4.png"
+            />
+            <div class="wow bounceInUp" data-wow-duration="2s"  data-wow-delay="0.4s">
+              <div class="why-we-number">45м</div>
+              <div>довольных клиентов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper1">
+        <!-- Контент-->
+        <!--Slider-->
+        <div class="image-slider1 swiper-container-bisness">
+          <div class="image-slider__wrapper1 swiper-wrapper">
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people1.png" />
+                <div>
+                  Данная компания пока что одна из лучших, услугами которых я
+                  пользовался. Очень понравился сервис, персонал прияный в
+                  общении: при <span class="more-dots"
+                    >...</span
+                  ><span class="more"
+                    >необходимости всё выслушает и поможет. Также хочется отметить шеф-повара, все
+                    блюда невероятно вкусные.
+                  </span>
+                  <div class="btn">ещё</div>
+                </div>
+
+                <div class="people">Жак Хелман</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people2.png" />
+                <div>
+                  Летала по работе несколько раз этой авиакомпанией по Европе и
+                  осталась довольна. Приветливый персонал, все без задержек, с
+                  багажом тоже проблем <span class="more-dots">...</span
+                  ><span class="more"
+                    >не было. Надеюсь, что она меня не огорчит, и я буду дальше
+                    пользоваться её услугами.</span
+                  >
+                  <div class="btn">ещё</div>
+                </div>
+
+                <div class="people">Ребекка Филн</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people3.png" />
+                <div>
+                  Very good fly, very good company. Обслуживание в бизнес
+                  классе, как и сам бизнес класс на Боинг 777-300, соответствует
+                  мировым стандартам. Awia Wings несомненно одна из лучших.
+                </div>
+                <div class="people">Робин Волпс</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people4.png" />
+                <div>
+                  Летала этой авиакомпанией 2 раза. Первый по направлению
+                  Буэнос-Айрес - Эль-Калафате. Второй - Ушуайя - Буэнос-Айрес.
+                  Оба перелета прошли отлично, без задержек.
+                </div>
+                <div class="people">Моника Крупс</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people5.png" />
+                <div>
+                  Пользуюсь Awia Wings не в первый раз, по сравнению с другими
+                  авиакомпаниями, эта наиболее комфортабельная. Так же на борту
+                  самолёта намного больше возможностей, чем у других
+                  авиакомпаний.
+                </div>
+                <div class="people">Рита Крупцева</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+            <div class="image-slider__slide1 swiper-slide">
+              <div class="image-slider__image1">
+                <img src="img/people6.png" />
+                <div>
+                  Точно по расписанию, быстрая регистрация без больших очередей,
+                  удобные кресла с достаточным расстоянием. Даже на нашем
+                  коротком рейсе предложены напитки и легкая закуска.
+                </div>
+                <div class="people">Екатерина Васнецова</div>
+                <div class="line-review"></div>
+              </div>
+            </div>
+          </div>
+
+          <div  class="notFormobile"><img class="swiper-button-next1" src="img/next.png" /></div>
+          <div  class="notFormobile"><img class="swiper-button-prev1" src="img/previos.png" /></div>
+
+          <div class="swiper-pagination1"></div>
+        </div>
+      </div>
+      <footer class="footer-index">
+        <div class="countainer">
+          <div class="block1 flex">
+            <a href="index.html">Awia Wings</a>
+            <a href="about.html" class="a">о компании</a>
+            <a href="directions.html" class="a">направления</a>
+            <a href="#" class="a">справка</a>
+          </div>
+          <div class="block2 flex">
+            <div>важная информация</div>
+            <a href="#" class="a">специальные предложения</a>
+            <a href="trevelCovid.html" class="a">путешествуй без Covid-19</a>
+          </div>
+          <div class="block3 flex">
+            <div>поддержка</div>
+            <a href="#" class="a">часто задаваемые вопросы</a>
+            <a href="#" class="a">помощь</a>
+            <a href="contact.html" class="a">обратная связь</a>
+          </div>
+          <div class="block4 flex">
+            <div>следите за нами</div>
+            <div class=".flex_row">
+              <a href="#" class="a"><img src="img/instagramF.png" /></a>
+              <a href="#" class="a"><img src="img/facebookF.png" /></a>
+              <a href="#" class="a"><img src="img/telegramF.png" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <a href="#" class="scrollup countainer">Наверх</a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.vide.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
