@@ -1158,7 +1158,7 @@ input[name="contact"] {
   border-radius: 3px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.39);
   margin-top: -40px;
-	z-index: 3;
+	z-index: 55;
 }
 input[name="departure"],
 input[name="arrival"] {
@@ -1192,6 +1192,7 @@ input[name="arrivalCalendar"]:focus {
   text-align: center;
   font-family: 'Montserrat';
   font-size: 18px;
+	z-index: 60;
 }
 input[name="departureCalendar"],
 input[name="arrivalCalendar"] {
