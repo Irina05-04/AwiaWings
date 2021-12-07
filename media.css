@@ -80,7 +80,7 @@
   /*---trevel without Covid-19----*/
   #trevelCovid {
     min-height: 45vh;
-    max-width: 320px;
+    max-width: 100%;
   }
   .containerTrevel {
     width: 288px;
@@ -242,10 +242,10 @@
     flex-direction: column;
   }
   .image-slider-about {
-    width: 320px;
+    width: 100%;
   }
   .image-slider__image-about {
-    width: 320px;
+    width: 100%;
     height: auto;
   }
   .name_plane {
@@ -515,11 +515,11 @@
     min-height: 380px;
   }
   .image-slider1 {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
   .image-slider__image1 {
-    width: 320pxpx;
+    width: 100%;
     min-height: 320px;
   }
   .image-slider__image1 > div:not(:last-child) {
