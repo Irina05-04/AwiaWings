@@ -22,7 +22,7 @@
     min-height: 45vh;
   }
   .countres {
-    width: 100%;
+    width: 300px;
     flex-direction: column;
     align-content: center;
     margin-top: 24px;
