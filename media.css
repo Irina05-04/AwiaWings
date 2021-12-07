@@ -521,6 +521,7 @@
   .image-slider__image1 {
     width: 100%;
     min-height: 320px;
+    margin: 0 auto;
   }
   .image-slider__image1 > div:not(:last-child) {
     width: 288px;
