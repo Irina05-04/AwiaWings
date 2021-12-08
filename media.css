@@ -510,7 +510,7 @@
     font-size: 14px;
   }
   .wrapper1 {
-    max-width: 320px;
+    max-width: 100%;
     margin-top: 0;
     min-height: 380px;
   }
@@ -525,7 +525,10 @@
   }
   .image-slider__image1 > div:not(:last-child) {
     width: 288px;
-    margin: 16px 0 0 16px;
+    margin: 16px auto;
+  }
+  .people{
+    float: left;
   }
   .image-slider__image1 > img {
     margin: -45px 0 0 100px;
