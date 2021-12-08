@@ -1,8 +1,4 @@
-@media (min-width: 360px){
-  .registration button{
-   left: 9vh; 
-  }
-}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   /*---all----*/
   .heading {
@@ -660,5 +656,11 @@
   .menu a:first-child > img {
     width: 36px;
     height: auto;
+  }
+}
+
+@media (min-width: 360px){
+  .registration button{
+   left: 9vh; 
   }
 }
