@@ -533,7 +533,7 @@
   }
   .image-slider__image1 > div:not(:last-child) {
     width: 288px;
-    margin: 16px auto;
+   
   }
   .people{
     float: left;
