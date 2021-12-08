@@ -238,6 +238,9 @@
     margin-top: 8px;
   }
   /*----about us----*/
+  .founder{
+    margin-bottom: 10px;
+  }
   .founders {
     flex-direction: column;
   }
