@@ -1,3 +1,8 @@
+@media (min-width: 360px){
+  .registration button{
+   left: 9vh; 
+  }
+}
 @media (min-width: 320px) and (max-width: 1024px) {
   /*---all----*/
   .heading {
@@ -147,8 +152,8 @@
   }
   .registration button {
     position: absolute;
-    top: 70%;
-    left: 12%;
+    top: 64.5vh;
+    left: 6vh;
     border: 2px solid #132734;
     color: #132734;
   }
