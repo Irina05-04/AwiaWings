@@ -157,3 +157,61 @@ function hoverCard(n, m) {
     d.getElementById(btn).style.visibility = "hidden";
   }
 }
+document.querySelector('.button1').addEventListener('click',()=>{
+let fail = "";
+let name = document.querySelector('.name').value;
+let mail = document.querySelector('.mail').value;
+let message = document.querySelector('.message').value;
+
+if (mail == "" ||  name == ""  || message == ""){
+  alert("Заполните все поля");
+}
+else{
+let mail_valid = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+let name_valid = /(^[A-Z][a-z]*)[,|\s]([A-Z][a-z]+$)|(^[А-Я][а-я]*)[,|\s]([А-Я][а-я]+$)/;
+if (mail_valid.test(mail) == false) {
+  fail += "Вы ввели некорректный электронный адрес.\n\n";
+}
+if (name_valid.test(name) == false) {
+  fail += "Вы ввели некорректное имя пользователя.\n\n";
+}
+if (fail) {
+  alert(fail);
+}
+else{
+  alert("Сообщение отправлено успешно");
+  document.querySelector('.name').value = ""; 
+  document.querySelector('.mail').value = ""; 
+  document.querySelector('.message').value = "";
+}
+}
+});
+
+document.querySelector('.inter').addEventListener('click',()=>{
+  let fail = "";
+  let login = document.querySelector('.login').value;
+  let phone = document.querySelector('.phone').value;
+  let password = document.querySelector('.password').value;
+  
+  if (login == "" ||  phone == ""  || password == ""){
+    alert("Заполните все поля");
+  }
+  else{
+  let phone_valid = /^(8)[\- ]?(\(?\d{3}\)?[\- ]?)?(([\d]{3}[\- ]?)([\d]{2}[\- ]?)([\d]{2}[\- ]?))$/;
+  let password_valid = /(^[A-Z][a-z]*)[,|\s]([A-Z][a-z]+$)|(^[А-Я][а-я]*)[,|\s]([А-Я][а-я]+$)/;
+  if (phone_valid.test(phone) == false) {
+    fail += "Вы ввели некорректный номер телефона.\n\n";
+  }
+  if (password_valid.test(password) == false) {
+    fail += "Вы ввели некорректный пароль.\n\n";
+  }
+  if (fail) {
+    alert(fail);
+  }
+  else{
+    document.querySelector('.login').value = ""; 
+    document.querySelector('.phone').value = ""; 
+    document.querySelector('.message').value = "";
+  }
+  }
+  });
