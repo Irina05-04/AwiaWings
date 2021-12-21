@@ -12,14 +12,14 @@ $(document).ready(function () {
     $('body').toggleClass('lock');
   });
 });
-/*
+
 let swap = document.querySelector(".swap");
 
 swap.addEventListener("click", function () {
   var tmp = document.querySelector(".departureInput").value;
   document.querySelector(".departureInput").value = document.querySelector(".arrivalInput").value;
   document.querySelector(".arrivalInput").value = tmp;
-});*/
+});
 
 $(document).ready(function () {
   $(".country").slice(0, 9).show();
